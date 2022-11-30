@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/Button";
 
 import Card from "../UI/Card";
+import ErrorModal from "../UI/ErrorModal";
 import styles from "./AddUser.module.css";
 
 const AddUser = (props) => {
@@ -41,14 +42,14 @@ const AddUser = (props) => {
           type="text"
           value={enteredName}
           onChange={enteredNameHandler}
-        ></input>
+          ></input>
         <label htmlFor="age">Age (Years)</label>
         <input
           id="age"
           type="number"
           value={enteredAge}
           onChange={enteredAgeHandler}
-        ></input>
+          ></input>
         <Button type="submit">AddUser</Button>
       </form>
     </Card>
